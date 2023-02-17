@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shipperName": {
+      "type": "string"
+    },
+    "shipperSurname": {
+      "type": "string"
+    },
+    "shipperAddress": {
+      "type": "string"
+    },
+    "recipientAddress": {
+      "type": "string"
+    },
+    "shipperPhone": {
+      "type": "biginteger"
+    },
+    "recipientPhone": {
+      "type": "biginteger"
+    },
+    "pictures": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "packageDescription": {
+      "type": "richtext"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "packageQuantity": {
+      "type": "integer",
+      "default": 0
+    },
+    "recipientName": {
+      "type": "string"
+    },
+    "recipientSurname": {
+      "type": "string"
+    }
+  }
+}
