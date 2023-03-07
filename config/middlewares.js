@@ -1,12 +1,4 @@
-module.exports = [
-  'strapi::errors',
-  {
-    name: 'strapi::security',
-    config: {
-      contentSecurityPolicy: {
-        useDefaults: true,
-        directives: {
-          'connect-src': ["'self'", 'https:'],
+module.exports = [  'strapi::errors',  {    name: 'strapi::security',    config: {      contentSecurityPolicy: {        useDefaults: true,        directives: {          'connect-src': ["'self'", 'https:'],
           'img-src': [
             "'self'",
             'data:',
@@ -26,12 +18,22 @@ module.exports = [
       },
     },
   },
+  {
+    name: 'strapi::body',
+    config: {
+      jsonLimit: '100mb',
+      formLimit: '100mb',
+      textLimit: '100mb',
+      formidable: {
+        maxFileSize: 20 * 1024 * 1024,
+      },
+    },
+  },
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
-  'strapi::body',
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
-]
+];

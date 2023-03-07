@@ -1,0 +1,5 @@
+[build]
+  command = "cd server && npm run build"
+  publish = "server/build"
+
+[build.environment]

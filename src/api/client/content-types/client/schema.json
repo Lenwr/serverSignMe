@@ -30,17 +30,6 @@
     "recipientPhone": {
       "type": "biginteger"
     },
-    "pictures": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "packageDescription": {
       "type": "richtext"
     },
@@ -55,6 +44,23 @@
     },
     "recipientSurname": {
       "type": "string"
+    },
+    "pictures": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "images": {
+      "type": "string"
+    },
+    "cardBoardQuantity": {
+      "type": "integer"
     }
   }
 }
