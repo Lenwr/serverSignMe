@@ -2,7 +2,7 @@ module.exports = ({ env }) => ({
   'netlify-deployments': {
     enabled: true,
     config: {
-      accessToken: process.env.NETLIFY_DEPLOYMENTS_PLUGIN_ACCESS_TOKEN,
+      accessToken: 'HKl_kFlUhql2zekWOxSyWntfPrDLP7OB5UzyYvDHixY',
       sites: [
         {
           name: 'serversignme',
